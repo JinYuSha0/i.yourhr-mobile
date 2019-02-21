@@ -1,0 +1,35 @@
+.c-list {
+  padding: .4rem 0;
+  .list-header {
+    color: #888888;
+    width: 100%;
+    padding: .3rem .3rem .2rem .3rem;
+    font-size: .36rem;
+  }
+  .list-body {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    .noPaddingLeft {
+      padding-left: 0 !important;
+    }
+    .list-item {
+      min-height: 1.2rem;
+      background-color: #ffffff;
+      padding-left: .4rem;
+      line-height: 1.2rem;
+      .list-inline {
+        display: flex;
+        padding-right: .4rem;
+        border-bottom: 1px solid #dddddd;
+      }
+    }
+    .list-item:last-child {
+      .list-inline {
+        border-bottom: none;
+      }
+    }
+    .list-item:active {
+      background-color: #f1f1f1;
+    }
+  }
+}

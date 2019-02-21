@@ -1,0 +1,141 @@
+@import "normalize.css";
+
+@bg-color: #ececec;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  background-color: #ececec;
+  overflow: hidden;
+}
+
+a，a:hover, a:visited, a:link, a:active  {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none !important;
+}
+
+//iconfont 格兰堂直播项目
+@font-face {
+  font-family: 'iconfont';  /* project id 383043 */
+  src: url('//at.alicdn.com/t/font_383043_xn3c71ltawp6tj4i.eot');
+  src: url('//at.alicdn.com/t/font_383043_xn3c71ltawp6tj4i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_383043_xn3c71ltawp6tj4i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_383043_xn3c71ltawp6tj4i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_383043_xn3c71ltawp6tj4i.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  margin-right: .1rem;
+  font-family:"iconfont" !important;
+  font-size:.4rem;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app-wrapper {
+  width: 100%;
+  height: 100%;
+  .app {
+    .layout {
+      background-color: @bg-color;
+      position: relative;
+      min-height: 100%;
+      display: block;
+      #switch-wrapper {
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        .layout-body {
+          min-height: 100%;
+          box-sizing: border-box;
+          padding-top: 1.333333rem;
+        }
+      }
+    }
+  }
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.display-none {
+  display: none;
+}
+
+.forbidScroll {
+  overflow: hidden !important;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+.error:before {
+  font-family:"iconfont" !important;
+  content: "\e6ac";
+  padding-right: .2rem;
+  color: red;
+}
+
+.error {
+  font-size: .68rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.loading {
+  font-size: .68rem;
+  text-align: center;
+  color: #ababab;
+  padding: 1rem 0;
+}
+
+.blue-btn {
+  width: 4rem;
+  padding: .3rem 0;
+  background-color: #0077d9;
+  display: block;
+  margin: auto;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  border-radius: 3px;
+  text-align: center;
+  font-size: .333333333rem;
+  cursor: pointer;
+}
+
+.blue-btn:active {
+  opacity: .8;
+}
+
+/*动画*/
+@import "animate.css";
+
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+}

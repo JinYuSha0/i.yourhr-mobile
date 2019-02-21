@@ -1,0 +1,18 @@
+{
+  "presets": [
+    "react",
+    "es2015",
+    "stage-0"
+  ],
+  "plugins": [
+      ["import", {
+        "libraryName": "antd-mobile",
+        "style": true
+      }],
+      "syntax-export-extensions",
+      "syntax-flow",
+      "transform-export-extensions",
+      "transform-flow-strip-types",
+      "transform-runtime"
+  ]
+}

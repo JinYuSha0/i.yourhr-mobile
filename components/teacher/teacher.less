@@ -1,0 +1,42 @@
+@import "../../static/style/global";
+
+.c-teacher {
+  width: 100%;
+  box-sizing: border-box;
+  padding: .2rem .3rem;
+  border-bottom: 1px solid @border-color;
+  .teacher-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: .2rem;
+    .people {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: .2rem;
+      img {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: .1rem;
+      }
+      h2 {
+        color: #333333;
+        font-size: .3888888rem;
+      }
+    }
+    .weibo {
+      width: .5rem;
+      height: .5rem;
+      margin-left: .2rem;
+      background-size: .5rem .5rem;
+      background-image: url('../../static/images/weibo_logo.png');
+    }
+  }
+  .teacher-intro {
+    font-size: .333333rem;
+    color: #686868;
+    text-align: justify;
+  }
+}

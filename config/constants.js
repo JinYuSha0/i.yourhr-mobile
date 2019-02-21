@@ -1,0 +1,1 @@
+export const URL = 'http://api.yourhr.com.cn/bm'  //http://test.api.yourhr.com.cn/bm

@@ -1,0 +1,53 @@
+.modal-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8;
+  .popup-title {
+    position: absolute;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.2rem;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 1.2rem;
+    font-size: .46rem;
+    color: #333333;
+    border-bottom: 1px solid #dedede;
+    padding: 0 1.2rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    .close-btn:before {
+      font-family: "iconfont" !important;
+      font-size: .6rem;
+      color: #cccccc;
+      content: "\E612";
+    }
+    .close-btn {
+      width: 1.2rem;
+      height: 1.2rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      line-height: 1.1rem;
+      justify-content: center;
+    }
+  }
+  .popup-inner {
+    position: relative;
+    height: 100%;
+    padding-top: 1.2rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
